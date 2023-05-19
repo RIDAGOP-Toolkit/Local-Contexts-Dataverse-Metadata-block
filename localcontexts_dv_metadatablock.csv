@@ -1,67 +1,69 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
 	local_contexts_labels		Local Contexts Labels	https://localcontexts.org												
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	lcl.projectPage	Project page		https://	url	0	"<a href=""#VALUE"" target=""_blank"">#VALUE</a>"	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		local_contexts_labels	
+	lcl.projectPage	Project page		https://	url	0	<a href="#VALUE" target="_blank">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		local_contexts_labels
 	lcl.projectTitle	Project title			text	1	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.createdBy	Created by			none	2		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.createdBy.institution	Institution	Name of the institution		text	3	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	lcl.createdBy	local_contexts_labels	
-	lcl.createdBy.researcher	Researcher			none	4		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	lcl.createdBy	local_contexts_labels	
+	lcl.createdBy.institution	Institution	Name of the institution		text	3	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
+	lcl.createdBy.researcher	Researcher			none	4		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
 	lcl.createdBy.researcher.name	Name	Name of the researcher		text	5	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.createdBy.researcher	local_contexts_labels	
 	lcl.createdBy.researcher.orcid	ORCID	ORCID of the researcher		text	6	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.createdBy.researcher	local_contexts_labels	
-	lcl.createdBy.community	Community			text	7	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	lcl.createdBy	local_contexts_labels	
+	lcl.createdBy.community	Community			text	7	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
 	lcl.notice	Notice			none	8		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.notice.type	Type			text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.notice.img_url	Image url			url	10	<img src=”#VALUE” alt=”#NAME” class=”metadata-logo”/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.notice.default_text	Default text			text	11	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.notice.createdAt	Created at			date	12	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.tkLabel	TK Label	Traditional Knowledge Label		none	13		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.tkLabel.type	Label type			text	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels	
-	lcl.tkLabel.language	Language			text	15	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels	
-	lcl.tkLabel.text	Label text			textbox	16	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels	
-	lcl.tkLabel.img_url	Image url			url	17	<img src=”#VALUE” alt=”#NAME” class=”metadata-logo”/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels	
-	lcl.tkLabel.audiofile	Audio file			url	18	"<a href=""#VALUE"" target=""_blank"">#VALUE</a>"	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels	
-	lcl.tkLabel.community	Community			text	19	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels	
-	lcl.tkLabel.createdAt	Created at			date	20	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels	
-	lcl.bcLabel	BC Label	Biocultural Label		none	21		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.bcLabel.type	Label type			text	22	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels	
-	lcl.bcLabel.language	Language			text	23	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels	
-	lcl.bcLabel.text	Label text			textbox	24	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels	
-	lcl.bcLabel.img_url	Image url			url	25	<img src=”#VALUE” alt=”#NAME” class=”metadata-logo”/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels	
-	lcl.bcLabel.audiofile	Audio file			url	26	"<a href=""#VALUE"" target=""_blank"">#VALUE</a>"	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels	
-	lcl.bcLabel.community	Community			text	27	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels	
-	lcl.bcLabel.createdAt	Created at			date	28	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels	
-#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	lcl.notice.type	Traditional Knowledge		0												
-	lcl.notice.type	Biocultural		1												
-	lcl.notice.type	Attribution Incomplete		2												
-	lcl.notice.type	Open to Collaborate		3												
-	lcl.tkLabel.type	Attribution		0												
-	lcl.tkLabel.type	Clan		1												
-	lcl.tkLabel.type	Family		2												
-	lcl.tkLabel.type	Outreach		3												
-	lcl.tkLabel.type	Tk multiple community		4												
-	lcl.tkLabel.type	Non verified		5												
-	lcl.tkLabel.type	Verified		6												
-	lcl.tkLabel.type	Non commercial		7												
-	lcl.tkLabel.type	Commercial		8												
-	lcl.tkLabel.type	Culturally sensitive		9												
-	lcl.tkLabel.type	Community voice		10												
-	lcl.tkLabel.type	Community use only		11												
-	lcl.tkLabel.type	Seasonal		12												
-	lcl.tkLabel.type	Women general		13												
-	lcl.tkLabel.type	Men general		14												
-	lcl.tkLabel.type	Men restricted		15												
-	lcl.tkLabel.type	Women restricted		16												
-	lcl.tkLabel.type	Secret sacred		17												
-	lcl.tkLabel.type	Open to collaboration		18												
-	lcl.tkLabel.type	Creative		19												
-	lcl.bcLabel.type	Provenance		0												
-	lcl.bcLabel.type	Commercialization		1												
-	lcl.bcLabel.type	Non commercial		2												
-	lcl.bcLabel.type	Collaboration		3												
-	lcl.bcLabel.type	Consent verified		4												
-	lcl.bcLabel.type	Consent non verified		5												
-	lcl.bcLabel.type	Multiple community		6												
-	lcl.bcLabel.type	Research		7												
-	lcl.bcLabel.type	Clan		8												
-	lcl.bcLabel.type	Outreach		9												
+	lcl.notice.name	Name	text		text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
+	lcl.notice.type	Type			text	10	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
+	lcl.notice.img_url	Image url			url	11	<img src=”#VALUE” alt=”#NAME” class=”metadata-logo”/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
+	lcl.notice.default_text	Default text			textbox	12	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
+	lcl.notice.createdAt	Created at			date	13	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
+	lcl.tkLabel	TK Label	Traditional Knowledge Label		none	14		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
+	lcl.tkLabel.name	TK Label name			textbox	15	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.type	Label type			textbox	16	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.language	Language			textbox	17	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.createdAt	Created at			date	18	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.text	Label text			textbox	19	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.community	Community			textbox	20	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.audiofile	Audio file			url	21	<a href="#VALUE" target="_blank">#VALUE</a></br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.img_url	Image url			url	22	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.bcLabel	BC Label	Biocultural Label		none	23		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
+	lcl.bcLabel.name	Name	text		textbox	24	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.type	Label type			textbox	25	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.language	Language			textbox	26	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.createdAt	Created at			date	27	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.text	Label text			textbox	28	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.community	Community			textbox	29	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.audiofile	Audio file			url	30	<a href="#VALUE" target="_blank">#VALUE</a><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.img_url	Image url			url	31	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder
+	lcl.notice.type	tk_multiple_community		0
+	lcl.notice.type	biocultural		1												
+	lcl.notice.type	attribution_incomplete		2												
+	lcl.notice.type	open_to_collaborate		3												
+	lcl.tkLabel.type	attribution		0												
+	lcl.tkLabel.type	clan		1												
+	lcl.tkLabel.type	family		2												
+	lcl.tkLabel.type	outreach		3												
+	lcl.tkLabel.type	tk_multiple_community		4												
+	lcl.tkLabel.type	non_verified		5												
+	lcl.tkLabel.type	verified		6												
+	lcl.tkLabel.type	non_commercial		7												
+	lcl.tkLabel.type	commercial		8												
+	lcl.tkLabel.type	culturally_sensitive		9												
+	lcl.tkLabel.type	community_voice		10												
+	lcl.tkLabel.type	community_use_only		11												
+	lcl.tkLabel.type	seasonal		12												
+	lcl.tkLabel.type	women_general		13												
+	lcl.tkLabel.type	men_general		14												
+	lcl.tkLabel.type	men_restricted		15												
+	lcl.tkLabel.type	women_restricted		16												
+	lcl.tkLabel.type	secret_sacred		17												
+	lcl.tkLabel.type	open_to_collaboration		18												
+	lcl.tkLabel.type	creative		19												
+	lcl.bcLabel.type	provenance		0												
+	lcl.bcLabel.type	commercialization		1												
+	lcl.bcLabel.type	non_commercial		2												
+	lcl.bcLabel.type	collaboration		3												
+	lcl.bcLabel.type	consent_verified		4												
+	lcl.bcLabel.type	consent_non_verified		5												
+	lcl.bcLabel.type	multiple_community		6												
+	lcl.bcLabel.type	research		7												
+	lcl.bcLabel.type	clan		8												
+	lcl.bcLabel.type	outreach		9												

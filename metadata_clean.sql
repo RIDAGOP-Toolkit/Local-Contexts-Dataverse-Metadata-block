@@ -20,33 +20,102 @@ $$ LANGUAGE plpgsql;
 -- Function to delete rows from all tables using search_name parameter
 DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
 
+-- Function to delete rows from all tables using search_name parameter
+DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
+
+-- Function to delete rows from all tables using search_name parameter
+DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
+
+-- Function to delete rows from all tables using search_name parameter
+DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
+
+-- Function to delete rows from all tables using search_name parameter
+DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
+
+-- Function to delete rows from all tables using search_name parameter
+DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
+
 CREATE OR REPLACE FUNCTION delete_related_rows(search_name VARCHAR)
 RETURNS VOID AS $$
+DECLARE
+    rows_deleted INTEGER := 0;
+    temp_rows_deleted INTEGER := 0;
 BEGIN
     -- Create a temporary table to store the result of find_metadatablock(search_name)
     CREATE TEMPORARY TABLE temp_related_rows ON COMMIT DROP AS
         SELECT * FROM find_metadatablock(search_name);
 
-    DELETE FROM datasetfield
-    WHERE datasetfield.id IN (SELECT datasetfield_id FROM temp_related_rows);
+    -- Start of the loop
+    LOOP
+        -- Reset the rows_deleted count at the start of each loop
+        rows_deleted := 0;
 
-    DELETE FROM datasetfieldcompoundvalue
-    WHERE datasetfieldcompoundvalue.id IN (SELECT datasetfieldcompoundvalue_id FROM temp_related_rows);
+        -- Delete from datasetfield_controlledvocabularyvalue
+        DELETE FROM datasetfield_controlledvocabularyvalue
+        WHERE controlledvocabularyvalues_id IN (SELECT controlledvocabularyvalue_id FROM temp_related_rows);
+        GET DIAGNOSTICS temp_rows_deleted = ROW_COUNT;
+        rows_deleted := rows_deleted + temp_rows_deleted;
 
-    DELETE FROM controlledvocabularyvalue
-    WHERE controlledvocabularyvalue.id IN (SELECT controlledvocabularyvalue_id FROM temp_related_rows);
+        -- Delete from controlledvocabularyvalue
+        DELETE FROM controlledvocabularyvalue
+        WHERE id IN (SELECT controlledvocabularyvalue_id FROM temp_related_rows);
+        GET DIAGNOSTICS temp_rows_deleted = ROW_COUNT;
+        rows_deleted := rows_deleted + temp_rows_deleted;
 
-    DELETE FROM datasetfieldtype
-    WHERE datasetfieldtype.id IN (SELECT datasetfieldtype_id FROM temp_related_rows);
+        -- Delete from datasetfieldvalue
+        DELETE FROM datasetfieldvalue
+        WHERE datasetfield_id IN (SELECT datasetfield_id FROM temp_related_rows);
+        GET DIAGNOSTICS temp_rows_deleted = ROW_COUNT;
+        rows_deleted := rows_deleted + temp_rows_deleted;
 
-    DELETE FROM metadatablock
-    WHERE metadatablock.id IN (SELECT metadatablock_id FROM temp_related_rows);
+        -- Delete from datasetfield where parentdatasetfieldcompoundvalue_id is in temp_related_rows
+        DELETE FROM datasetfield
+        WHERE parentdatasetfieldcompoundvalue_id IN (SELECT datasetfield_id FROM temp_related_rows);
+        GET DIAGNOSTICS temp_rows_deleted = ROW_COUNT;
+        rows_deleted := rows_deleted + temp_rows_deleted;
+
+        -- Delete from datasetfieldcompoundvalue
+        DELETE FROM datasetfieldcompoundvalue
+        WHERE parentdatasetfield_id IN (SELECT datasetfield_id FROM temp_related_rows);
+        GET DIAGNOSTICS temp_rows_deleted = ROW_COUNT;
+        rows_deleted := rows_deleted + temp_rows_deleted;
+
+        -- Delete from datasetfield
+        DELETE FROM datasetfield
+        WHERE id IN (SELECT datasetfield_id FROM temp_related_rows);
+        GET DIAGNOSTICS temp_rows_deleted = ROW_COUNT;
+        rows_deleted := rows_deleted + temp_rows_deleted;
+
+        -- Delete from datasetfieldtype
+        DELETE FROM datasetfieldtype
+        WHERE id IN (SELECT datasetfieldtype_id FROM temp_related_rows);
+        GET DIAGNOSTICS temp_rows_deleted = ROW_COUNT;
+        rows_deleted := rows_deleted + temp_rows_deleted;
+
+        -- Delete from metadatablock
+        DELETE FROM metadatablock
+        WHERE id IN (SELECT metadatablock_id FROM temp_related_rows);
+        GET DIAGNOSTICS temp_rows_deleted = ROW_COUNT;
+        rows_deleted := rows_deleted + temp_rows_deleted;
+
+        -- Exit the loop when no more rows are deleted
+        EXIT WHEN rows_deleted = 0;
+    END LOOP;
 END;
 $$ LANGUAGE plpgsql;
 
+
+
+
+
+
+
+
+
+
 -- suggested usage:
 -- make a first search
--- SELECT * FROM find_metadatablock('my-metadata-block-name');
+SELECT * FROM find_metadatablock('my-metadata-block-name');
 -- if there is a dataverse, print its alias
 -- SELECT alias FROM dataverse WHERE id IN (SELECT dataverse_id FROM find_metadatablock('my-metadata-block-name'));
 -- there should be no dataverse and no DATASET using the metadatablock... then this should work
