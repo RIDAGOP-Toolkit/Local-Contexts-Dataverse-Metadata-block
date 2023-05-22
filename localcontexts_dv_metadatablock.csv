@@ -4,7 +4,7 @@
 	lcl.projectPage	Project page		https://	url	0	<a href="#VALUE" target="_blank">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		local_contexts_labels
 	lcl.projectTitle	Project title			text	1	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		local_contexts_labels	
 	lcl.date_added  Date added  date    2   #VALUE  FALSE   FALSE   FALSE   FALSE   FALSE   FALSE   local_contexts_labels
-	lcl.date_modified   Date modified   date    3   #VALUE  FALSE   FALSE   FALSE   FALSE   FALSE   FALSE   local_contexts_labels
+	lcl.date_modified   Date modified   text    3   #VALUE  FALSE   FALSE   FALSE   FALSE   FALSE   FALSE   local_contexts_labels
 	lcl.createdBy.institution	Institution	Name of the institution		text	4	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
 	lcl.createdBy.researcher	Researcher			none	5		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
 	lcl.createdBy.researcher.name	Name	Name of the researcher		text	6	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.createdBy.researcher	local_contexts_labels
