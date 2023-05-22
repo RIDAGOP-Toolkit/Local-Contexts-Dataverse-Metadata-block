@@ -3,35 +3,37 @@
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	lcl.projectPage	Project page		https://	url	0	<a href="#VALUE" target="_blank">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		local_contexts_labels
 	lcl.projectTitle	Project title			text	1	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.createdBy.institution	Institution	Name of the institution		text	3	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.createdBy.researcher	Researcher			none	4		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.createdBy.researcher.name	Name	Name of the researcher		text	5	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.createdBy.researcher	local_contexts_labels	
-	lcl.createdBy.researcher.orcid	ORCID	ORCID of the researcher		text	6	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.createdBy.researcher	local_contexts_labels	
-	lcl.createdBy.community	Community			text	7	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.notice	Notice			none	8		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.notice.name	Name	text		text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.notice.type	Type			text	10	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.notice.img_url	Image url			url	11	<img src=”#VALUE” alt=”#NAME” class=”metadata-logo”/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.notice.default_text	Default text			textbox	12	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.notice.createdAt	Created at			date	13	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels	
-	lcl.tkLabel	TK Label	Traditional Knowledge Label		none	14		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels	
-	lcl.tkLabel.name	TK Label name			textbox	15	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.type	Label type			textbox	16	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.language	Language			textbox	17	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.createdAt	Created at			date	18	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.text	Label text			textbox	19	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.community	Community			textbox	20	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.audiofile	Audio file			url	21	<a href="#VALUE" target="_blank">#VALUE</a></br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.img_url	Image url			url	22	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.bcLabel	BC Label	Biocultural Label		none	23		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
-	lcl.bcLabel.name	Name	text		textbox	24	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.type	Label type			textbox	25	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.language	Language			textbox	26	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.createdAt	Created at			date	27	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.text	Label text			textbox	28	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.community	Community			textbox	29	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.audiofile	Audio file			url	30	<a href="#VALUE" target="_blank">#VALUE</a><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.img_url	Image url			url	31	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.date_added  Date added  date    2   #VALUE  FALSE   FALSE   FALSE   FALSE   FALSE   FALSE   local_contexts_labels
+	lcl.date_modified   Date modified   date    3   #VALUE  FALSE   FALSE   FALSE   FALSE   FALSE   FALSE   local_contexts_labels
+	lcl.createdBy.institution	Institution	Name of the institution		text	4	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
+	lcl.createdBy.researcher	Researcher			none	5		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
+	lcl.createdBy.researcher.name	Name	Name of the researcher		text	6	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.createdBy.researcher	local_contexts_labels
+	lcl.createdBy.researcher.orcid	ORCID	ORCID of the researcher		text	7	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.createdBy.researcher	local_contexts_labels
+	lcl.createdBy.community	Community			text	8	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
+	lcl.notice	Notice			none	9		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
+	lcl.notice.name	Name	text		text	10	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels
+	lcl.notice.type	Type			text	11	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels
+	lcl.notice.img_url	Image url			url	12	<img src=”#VALUE” alt=”#NAME” class=”metadata-logo”/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels
+	lcl.notice.default_text	Default text			textbox	13	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels
+	lcl.notice.createdAt	Created at			date	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.notice	local_contexts_labels
+	lcl.tkLabel	TK Label	Traditional Knowledge Label		none	15		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
+	lcl.tkLabel.name	TK Label name			textbox	16	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.type	Label type			textbox	17	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.language	Language			textbox	18	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.createdAt	Created at			date	19	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.text	Label text			textbox	20	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.community	Community			textbox	21	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.audiofile	Audio file			url	22	<a href="#VALUE" target="_blank">#VALUE</a></br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.img_url	Image url			url	23	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.bcLabel	BC Label	Biocultural Label		none	24		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
+	lcl.bcLabel.name	Name	text		textbox	25	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.type	Label type			textbox	26	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.language	Language			textbox	27	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.createdAt	Created at			date	28	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.text	Label text			textbox	29	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.community	Community			textbox	30	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.audiofile	Audio file			url	31	<a href="#VALUE" target="_blank">#VALUE</a><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.img_url	Image url			url	32	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
 	lcl.notice.type	tk_multiple_community		0
 	lcl.notice.type	biocultural		1												
