@@ -33,7 +33,7 @@
 	lcl.bcLabel.audiofile	Audio file			url	30	<a href="#VALUE" target="_blank">#VALUE</a><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 	lcl.bcLabel.img_url	Image url			url	31	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
-	lcl.notice.type	tk_multiple_community		0
+	lcl.notice.type	traditional_knowledge		0
 	lcl.notice.type	biocultural		1												
 	lcl.notice.type	attribution_incomplete		2												
 	lcl.notice.type	open_to_collaborate		3												
