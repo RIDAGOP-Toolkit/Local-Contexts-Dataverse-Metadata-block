@@ -33,37 +33,37 @@
 	lcl.bcLabel.audiofile	Audio file			url	30	<a href="#VALUE" target="_blank">#VALUE</a><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 	lcl.bcLabel.img_url	Image url			url	31	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
-	lcl.notice.type	traditional_knowledge		0
-	lcl.notice.type	biocultural		1												
-	lcl.notice.type	attribution_incomplete		2												
-	lcl.notice.type	open_to_collaborate		3												
-	lcl.tkLabel.type	attribution		0												
-	lcl.tkLabel.type	clan		1												
-	lcl.tkLabel.type	family		2												
-	lcl.tkLabel.type	outreach		3												
-	lcl.tkLabel.type	tk_multiple_community		4												
-	lcl.tkLabel.type	non_verified		5												
-	lcl.tkLabel.type	verified		6												
-	lcl.tkLabel.type	non_commercial		7												
-	lcl.tkLabel.type	commercial		8												
-	lcl.tkLabel.type	culturally_sensitive		9												
-	lcl.tkLabel.type	community_voice		10												
-	lcl.tkLabel.type	community_use_only		11												
-	lcl.tkLabel.type	seasonal		12												
-	lcl.tkLabel.type	women_general		13												
-	lcl.tkLabel.type	men_general		14												
-	lcl.tkLabel.type	men_restricted		15												
-	lcl.tkLabel.type	women_restricted		16												
-	lcl.tkLabel.type	secret_sacred		17												
-	lcl.tkLabel.type	open_to_collaboration		18												
-	lcl.tkLabel.type	creative		19												
-	lcl.bcLabel.type	provenance		0												
-	lcl.bcLabel.type	commercialization		1												
-	lcl.bcLabel.type	non_commercial		2												
-	lcl.bcLabel.type	collaboration		3												
-	lcl.bcLabel.type	consent_verified		4												
-	lcl.bcLabel.type	consent_non_verified		5												
-	lcl.bcLabel.type	multiple_community		6												
-	lcl.bcLabel.type	research		7												
-	lcl.bcLabel.type	clan		8												
-	lcl.bcLabel.type	outreach		9												
+	lcl.notice.type	TK Notice	traditional_knowledge	0
+	lcl.notice.type	BC Notice	biocultural_knowledge	1
+	lcl.notice.type	Attribution incomplete	attribution_incomplete	2
+	lcl.notice.type	Open to collaborate	open_to_collaborate	3
+	lcl.tkLabel.type	TK Attribution (TK A)	attribution	0
+	lcl.tkLabel.type	TK Clan (TK CL)	clan	1
+	lcl.tkLabel.type	TK Family (TK F)	family	2
+	lcl.tkLabel.type	TK Outreach (TK O)	outreach	3
+	lcl.tkLabel.type	TK Multiple Communities (TK MC)	tk_multiple_community	4
+	lcl.tkLabel.type	TK Non-Verified (TK NV)	non_verified	5
+	lcl.tkLabel.type	TK Verified (TK V)	verified	6
+	lcl.tkLabel.type	TK Non-Commercial (TK NC)	non_commercial	7
+	lcl.tkLabel.type	TK Open to Commercialization (TK OC)	commercial	8
+	lcl.tkLabel.type	TK Culturally Sensitive (TK CS)	culturally_sensitive	9
+	lcl.tkLabel.type	TK Community Voice (TK CV)	community_voice	10
+	lcl.tkLabel.type	TK Community Use Only (TK CO)	community_use_only	11
+	lcl.tkLabel.type	TK Seasonal (TK S)	seasonal	12
+	lcl.tkLabel.type	TK Women General (TK WG)	women_general	13
+	lcl.tkLabel.type	TK Men General (TK MG)	men_general	14
+	lcl.tkLabel.type	TK Men Restricted (TK MR)	men_restricted	15
+	lcl.tkLabel.type	TK Women Restricted (TK WR)	women_restricted	16
+	lcl.tkLabel.type	TK Secret / Sacred (TK SS)	secret_sacred	17
+	lcl.tkLabel.type	TK Open to Collaboration (TK CB)	open_to_collaboration	18
+	lcl.tkLabel.type	TK Creative (TK CR)	creative	19
+	lcl.bcLabel.type	BC Provenance (BC P)	provenance	0
+	lcl.bcLabel.type	BC Open to Commercialization (BC OC)	commercialization	1
+	lcl.bcLabel.type	BC Non-Commercial (BC NC)	non_commercial	2
+	lcl.bcLabel.type	BC Open to Collaboration (BC CB)	collaboration	3
+	lcl.bcLabel.type	BC Consent Verified (BC CV)	consent_verified	4
+	lcl.bcLabel.type	BC Consent Non-Verified (BC CNV)	consent_non_verified	5
+	lcl.bcLabel.type	BC Multiple Communities (BC MC)	multiple_community	6
+	lcl.bcLabel.type	BC Research Use (BC R)	research	7
+	lcl.bcLabel.type	BC Clan (BC CL)	clan	8
+	lcl.bcLabel.type	BC Outreach (BC O)	outreach	9
