@@ -21,8 +21,8 @@
 	lcl.tkLabel.createdAt	Created at			date	18	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
 	lcl.tkLabel.text	Label text			textbox	19	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
 	lcl.tkLabel.community	Community			textbox	20	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.audiofile	Audio file			url	21	<a href="#VALUE" target="_blank">#VALUE</a></br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
-	lcl.tkLabel.img_url	Image url			url	22	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.audiofile	Audio file			url	21	<a href='#VALUE' target='_blank'>#VALUE</a></br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
+	lcl.tkLabel.img_url	Image url			url	22	<img src='#VALUE' style='max-width:120px' alt='#NAME'/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.tkLabel	local_contexts_labels
 	lcl.bcLabel	BC Label	Biocultural Label		none	23		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts_labels
 	lcl.bcLabel.name	Name	text		textbox	24	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 	lcl.bcLabel.type	Label type			textbox	25	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
@@ -30,8 +30,8 @@
 	lcl.bcLabel.createdAt	Created at			date	27	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 	lcl.bcLabel.text	Label text			textbox	28	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 	lcl.bcLabel.community	Community			textbox	29	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.audiofile	Audio file			url	30	<a href="#VALUE" target="_blank">#VALUE</a><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
-	lcl.bcLabel.img_url	Image url			url	31	<img src='#VALUE' style='max-width:120px' alt="#NAME"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.audiofile	Audio file			url	30	<a href='#VALUE' target='_blank'>#VALUE</a><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
+	lcl.bcLabel.img_url	Image url			url	31	<img src='#VALUE' style='max-width:120px' alt='#NAME'/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lcl.bcLabel	local_contexts_labels
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder
 	lcl.notice.type	TK Notice	traditional_knowledge	0
 	lcl.notice.type	BC Notice	biocultural_knowledge	1
