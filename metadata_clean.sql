@@ -20,21 +20,6 @@ $$ LANGUAGE plpgsql;
 -- Function to delete rows from all tables using search_name parameter
 DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
 
--- Function to delete rows from all tables using search_name parameter
-DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
-
--- Function to delete rows from all tables using search_name parameter
-DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
-
--- Function to delete rows from all tables using search_name parameter
-DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
-
--- Function to delete rows from all tables using search_name parameter
-DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
-
--- Function to delete rows from all tables using search_name parameter
-DROP FUNCTION IF EXISTS delete_related_rows(VARCHAR);
-
 CREATE OR REPLACE FUNCTION delete_related_rows(search_name VARCHAR)
 RETURNS VOID AS $$
 DECLARE
@@ -106,17 +91,10 @@ $$ LANGUAGE plpgsql;
 
 
 
-
-
-
-
-
-
-
 -- suggested usage:
 -- make a first search
-SELECT * FROM find_metadatablock('my-metadata-block-name');
+SELECT * FROM find_metadatablock('local_contexts_test');
 -- if there is a dataverse, print its alias
--- SELECT alias FROM dataverse WHERE id IN (SELECT dataverse_id FROM find_metadatablock('my-metadata-block-name'));
+SELECT alias FROM dataverse WHERE id IN (SELECT dataverse_id FROM find_metadatablock('local_contexts_test'));
 -- there should be no dataverse and no DATASET using the metadatablock... then this should work
--- SELECT delete_related_rows('my-metadata-block-name');
+SELECT delete_related_rows('local_contexts_test');
