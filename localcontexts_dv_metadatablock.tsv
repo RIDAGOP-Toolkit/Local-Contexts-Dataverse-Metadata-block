@@ -12,28 +12,28 @@
 	lc.createdBy.community	Community	The name of the Community on the Local Contexts Hub		text	8	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts	
 	lc.notice	Notice			none	9		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts	
 	lc.notice.name	Notice Name	The name of the Notice 		text	10	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.notice	local_contexts	
-	lc.notice.type	Type	The type of Notice added to a Project. More information here: https://localcontexts.org/notices/aboutnotices/		text	11	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.notice	local_contexts	
-	lc.notice.img_url	Image url		https://	url	12	<img src=”#VALUE” alt=”#NAME” class=”metadata-logo”/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.notice	local_contexts	
+	lc.notice.type	Type	The type of Notice		text	11	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.notice	local_contexts	
+	lc.notice.img_url	Image url	The URL for the Notice image	https://	url	12	<img src=”#VALUE” alt=”#NAME” class=”metadata-logo”/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.notice	local_contexts	
 	lc.notice.default_text	Default text	The default text for Notices		textbox	13	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.notice	local_contexts	
 	lc.notice.createdAt	Created at	The date a Notice was added to a Project		date	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.notice	local_contexts	
 	lc.tkLabel	TK Label	Traditional Knowledge Label		none	15		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts	
 	lc.tkLabel.name	TK Label name	The name of the Label		textbox	16	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.tkLabel	local_contexts	
-	lc.tkLabel.type	Label type	The type of Notice added to a Project. More information here: https://localcontexts.org/labels/traditional-knowledge-labels/ and https://localcontexts.org/labels/biocultural-labels/		textbox	17	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.tkLabel	local_contexts	
+	lc.tkLabel.type	Label type	The type of Label		textbox	17	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.tkLabel	local_contexts	
 	lc.tkLabel.language	Language	The full name of the language the text of a Label is written in		textbox	18	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.tkLabel	local_contexts	
 	lc.tkLabel.createdAt	Created at	The date the Label was added to a Project		date	19	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.tkLabel	local_contexts	
 	lc.tkLabel.text	Label text	The text for a Label		textbox	20	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.tkLabel	local_contexts	
 	lc.tkLabel.community	Community	The name of the Community that created the Label		textbox	21	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.tkLabel	local_contexts	
 	lc.tkLabel.audiofile	Audio file	The URL for an audio file for a Label	https://	url	22	<a href='#VALUE' target='_blank'>#VALUE</a></br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.tkLabel	local_contexts	
-	lc.tkLabel.img_url	Image url	The URL for the Label PNG image	https://	url	23	<img src='#VALUE' style='max-width:120px' alt='#NAME'/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.tkLabel	local_contexts	
+	lc.tkLabel.img_url	Image url	The URL for the Label image	https://	url	23	<img src='#VALUE' style='max-width:120px' alt='#NAME'/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.tkLabel	local_contexts	
 	lc.bcLabel	BC Label	Biocultural Label		none	24		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts	
 	lc.bcLabel.name	BC Label name 	The name of the Label		textbox	25	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.bcLabel	local_contexts	
-	lc.bcLabel.type	Label type	The type of Notice added to a Project. More information here: https://localcontexts.org/labels/traditional-knowledge-labels/ and https://localcontexts.org/labels/biocultural-labels/		textbox	26	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.bcLabel	local_contexts	
+	lc.bcLabel.type	Label type	The type of Label		textbox	26	(#VALUE)<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.bcLabel	local_contexts	
 	lc.bcLabel.language	Language	The full name of the language the text of a Label is written in		textbox	27	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.bcLabel	local_contexts	
 	lc.bcLabel.createdAt	Created at	The date the Label was added to a Project		date	28	created: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.bcLabel	local_contexts	
 	lc.bcLabel.text	Label text	The text for a Label		textbox	29	<br/>#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.bcLabel	local_contexts	
 	lc.bcLabel.community	Community	The name of the Community that created the Label		textbox	30	#NAME: #VALUE<br/>	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE	lc.bcLabel	local_contexts	
 	lc.bcLabel.audiofile	Audio file	The URL for an audio file for a Label	https://	url	31	<a href='#VALUE' target='_blank'>#VALUE</a><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.bcLabel	local_contexts	
-	lc.bcLabel.img_url	Image url	The URL for the Label PNG image	https://	url	32	<img src='#VALUE' style='max-width:120px' alt='#NAME'/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.bcLabel	local_contexts	
+	lc.bcLabel.img_url	Image url	The URL for the Label image	https://	url	32	<img src='#VALUE' style='max-width:120px' alt='#NAME'/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.bcLabel	local_contexts	
 	lc.geographicBoundingBox	Geographic Bounding Box	The fundamental geometric description for any Dataset that models geography is the geographic bounding box. It describes the minimum box, defined by west and east longitudes and north and south latitudes, which includes the largest geographic extent of the  Dataset's geographic coverage. This element is used in the first pass of a coordinate-based search. Inclusion of this element in the codebook is recommended, but is required if the bound polygon box is included. 		none	33		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		local_contexts	
 	lc.geo.westLongitude	West Longitude	Westernmost coordinate delimiting the geographic extent of the Dataset. A valid range of values,  expressed in decimal degrees, is -180,0 <= West  Bounding Longitude Value <= 180,0.		text	34		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.geographicBoundingBox	local_contexts	
 	lc.geo.eastLongitude	East Longitude	Easternmost coordinate delimiting the geographic extent of the Dataset. A valid range of values,  expressed in decimal degrees, is -180,0 <= East Bounding Longitude Value <= 180,0.		text	35		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	lc.geographicBoundingBox	local_contexts	
